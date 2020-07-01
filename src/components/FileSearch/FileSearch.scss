@@ -1,0 +1,13 @@
+.fileSearch{
+    .ant-layout-header{
+        background: #7dbcea;
+        display: flex;
+        align-items: center;
+        padding:0 20px;
+        position: relative;
+        .ant-btn{
+            position: absolute;
+            right:20px;
+        }
+    }
+}

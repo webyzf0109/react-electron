@@ -1,0 +1,17 @@
+.FileList{
+    .ant-row{
+        width: 100%;
+        .title{
+            cursor: pointer;
+        }
+        align-items: center;
+    }
+    .right-icon{
+        width: 70px;
+        display: flex;
+        justify-content: space-between;
+        .anticon{
+            cursor: pointer;
+        }
+    }
+}
