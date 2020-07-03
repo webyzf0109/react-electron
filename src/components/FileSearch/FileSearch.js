@@ -3,7 +3,7 @@ import { Layout, Button, Input } from "antd"
 import "./FileSearch.scss"
 import { SearchOutlined } from '@ant-design/icons';
 import PropTypes from 'prop-types'
-const { Header, Content } = Layout;
+const { Header } = Layout;
 const FileSearch = ({ title, onFileSearch }) => {
     const [inputActive, setInputActive] = useState(false)
     const [value, setValue] = useState('')
@@ -23,14 +23,11 @@ const FileSearch = ({ title, onFileSearch }) => {
                 }
                 {inputActive &&
                     <>
-                        <Input autoFocus placeholder="请输入文档名称" onPressEnter={(e) => { onFileSearch(e.target.value) }} onChange={(e) => { setValue(e.target.value) }} />
+                        <Input value={value} autoFocus placeholder="请输入文档名称" onPressEnter={(e) => { onFileSearch(e.target.value) }} onChange={(e) => { setValue(e.target.value) }} />
                         <Button onClick={() => { setInputActive(false) }} type="primary" size="small">关闭</Button>
                     </>
                 }
             </Header>
-            <Content>
-
-            </Content>
         </div>
     )
 }

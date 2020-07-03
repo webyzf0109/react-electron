@@ -1,17 +1,24 @@
-.FileList{
-    .ant-row{
-        width: 100%;
-        .title{
-            cursor: pointer;
-        }
-        align-items: center;
+.FileList {
+  margin-top: 60px;
+  height: calc(100vh - 140px);
+  .ant-row {
+    width: 100%;
+    .title {
+      cursor: pointer;
     }
-    .right-icon{
-        width: 70px;
-        display: flex;
-        justify-content: space-between;
-        .anticon{
-            cursor: pointer;
-        }
+    align-items: center;
+  }
+  .ant-list {
+    height: 100%;
+    overflow-y: auto;
+    border-right: none;
+  }
+  .right-icon {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    .anticon {
+      cursor: pointer;
     }
+  }
 }

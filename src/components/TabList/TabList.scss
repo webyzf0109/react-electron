@@ -1,0 +1,61 @@
+.TabList {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  li {
+    min-width: 70px;
+    margin-right: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    > span:nth-child(1) {
+      margin-right: 5px;
+    }
+    .close {
+      display: inline-block;
+      font-size: 12px;
+    }
+    .circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #d9534f;
+    }
+  }
+  li.active {
+    background: #7dbcea;
+    color: #fff;
+    .close {
+      display: none;
+    }
+  }
+
+  li.widthUnsavedMark {
+    .close {
+      display: none;
+    }
+  }
+
+  li:hover {
+    background: #7dbcea;
+    color: #fff;
+  }
+  li:hover .close {
+    display: inline-block;
+  }
+  li:hover .circle {
+    display: none;
+  }
+
+  .withUnsaved.nav-link .close {
+    display: none;
+  }
+  .withUnsaved.nav-link:hover .close {
+    display: inline-block;
+  }
+  .withUnsaved.nav-link:hover .circle {
+    display: none;
+  }
+}
