@@ -23,7 +23,9 @@ const App = () => {
   }
   const fileClick=(fileId)=>{
     setActiveFileID(fileId);
+    if(!openedFileIDs.includes(fileId)){
     setOpenedFileIDs([...openedFileIDs,fileId])
+    }
   }
   return (
     <div className="App">

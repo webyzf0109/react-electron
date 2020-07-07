@@ -10,6 +10,6 @@ app.on('ready', () => {
             nodeIntegration: true,
         }
     })
-    const urlLocation = isDev ? "http://localhost:3000" : "dummyurl"
+    const urlLocation = isDev ? "http://localhost:3000" : `file://${path.join(__dirname,'./build/index.html')}`
     mainWindow.loadURL(urlLocation)
 })
